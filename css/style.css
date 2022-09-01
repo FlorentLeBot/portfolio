@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 0.15em;
+  line-height: 1.2;
+  transform: translateY(52%);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: Rajdhani;
+}
+
+.main-header {
+  height: 90vh;
+  width: 100%;
+  background-color: #285086;
+}
+
+.header-wave {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  display: block;
+}
+
+@media screen and (min-width: 320px) {
+  .main-header {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-header {
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-header {
+    height: 32vh;
+  }
+}
+.intro {
+  top: 15%;
+  left: 5%;
+  border-radius: 10px;
+  width: 90%;
+  height: 10rem;
+  margin: 20px 0;
+  overflow: hidden;
+  background-color: #285086;
+  position: absolute;
+  z-index: 1000;
+  padding: 0.1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+  animation: intro 1000ms 1000ms both;
+}
+
+@keyframes intro {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#toggle {
+  display: none;
+}
+
+.hamburger {
+  position: absolute;
+  top: 3em;
+  right: 1em;
+  margin: -45px 0 0 -2em;
+  z-index: 9999;
+}
+.hamburger div {
+  position: relative;
+  width: 40px;
+  height: 6px;
+  border-radius: 2px;
+  background-color: hsl(23deg, 65%, 55%);
+  margin-top: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #285086;
+  top: -100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+  z-index: 9000;
+}
+.nav .nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.nav .menu a {
+  position: relative;
+  color: #6ecddd;
+  font-size: 1.5rem;
+  display: flex;
+  margin: 1.5rem 0 0 1.5rem;
+  transition: color 0.2s ease-in-out;
+  letter-spacing: 1px;
+}
+.nav .menu a:before {
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 0.25em;
+  background-color: hsl(0deg, 0%, 100%);
+  left: -0.5em;
+  transition: all 0.2s ease-in-out;
+}
+.nav .menu a:hover {
+  color: white;
+}
+.nav .menu a:hover:before {
+  height: 100%;
+}
+
+#toggle:checked + .hamburger .top-line {
+  transform: rotate(-45deg);
+  margin-top: 20px;
+}
+#toggle:checked + .hamburger .bottom-line {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .middle-line {
+  transform: rotate(45deg);
+  margin-top: -6px;
+}
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  .nav {
+    transform: scale(1);
+    top: 0;
+    max-height: 3rem;
+  }
+  .nav .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav .menu a {
+    margin-top: 0.8rem;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 300px;
+}
+
+.section-home {
+  width: 95%;
+  max-width: 1200px;
+  min-width: 300px;
+  height: auto;
+  margin: 2.5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .section-home {
+    width: 100%;
+    margin: 0%;
+  }
+}
+.section-home .article-home {
+  width: 100%;
+  margin: 2% 0;
+  background-color: #285086;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+@media screen and (min-width: 768px) {
+  .section-home .article-home {
+    width: 47%;
+    margin: 1%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .section-home .article-home {
+    width: 31%;
+  }
+}
+.section-home .article-home .title {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+.section-home .article-home .content {
+  font-size: 1rem;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

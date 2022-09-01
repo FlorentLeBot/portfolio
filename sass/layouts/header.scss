@@ -1,0 +1,114 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+// L'ENTETE
+
+.main-header {
+  height: 90vh;
+  width: 100%;
+  background-color: $color-2;
+  
+}
+.header-wave{
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+  display: block;
+}
+
+@media screen and (min-width: 320px) {
+  .main-header {
+    height: 80vh;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main-header {
+    height: 50vh;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .main-header {
+    height: 32vh;
+  }
+
+}
+
+
+// .progress {
+//   width: 50%;
+//   height: 20px;
+//   margin: 70px 10px;
+//   border: 1px solid black;
+//   position: absolute;
+//   top: 200px;
+//   left: 25%;
+//   z-index: 0;
+//   &__bar {
+//     height: 14px;
+//     margin: 2px 0;
+//     background-color: blue;
+//     opacity: 1;
+//     transform-origin: left;
+//     transform: scaleX(0);
+//     animation-name: keyframes-bar;
+//     animation-duration: 2s;
+//     animation-delay: 200ms;
+//     animation-fill-mode: both;
+//   }
+// }
+
+// @keyframes keyframes-bar {
+//   0% {
+//     transform: scaleX(0);
+//   }
+//   17% {
+//     transform: scaleX(0.18);
+//     opacity: 0.5;
+//   }
+//   24% {
+//     transform: scaleX(0.4);
+//     animation-timing-function: cubic-bezier(0.9, 0, 0.1, 1);
+//   }
+//   46% {
+//     transform: scaleX(0.8);
+//     animation-timing-function: cubic-bezier(0.25, 0.25, 0.9, 1);
+//   }
+//   85%,
+//   100% {
+//     opacity: 0.9;
+//   }
+//   100% {
+//     transform: scaleX(1);
+//   }
+// }
+.intro {
+ 
+  top: 15%;
+  left: 5%;
+  border-radius: 10px;
+  width: $size-90pct;
+  height: 10rem;
+  margin: 20px 0;
+  overflow: hidden;
+  background-color: $color-2;
+  position: absolute;
+  z-index: 1000;
+  padding: 0.1rem;
+  font-size: 1rem;
+  font-weight: 900;
+  color: white;
+  animation: intro 1000ms $intro-delay both;
+}
+
+@keyframes intro {
+  0% {
+    transform: translateX(-9999px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+

@@ -1,0 +1,50 @@
+// MINI RESET CSS
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  // background: $color-1;
+  width: 100%;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 0.15em;
+  line-height: 1.2;
+  transform: translateY(52%);
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+// .title{
+//   text-align: center;
+//   font-size: 2rem;
+// }
+
+// .icon-size-1{
+//   width: 50px; 
+// }
+// .icon-size-1-5{
+//   width: 75px;
+// }
+// .icon-size-2{
+//   width: 100px;
+// }
+
+
+// $i: 8;
+
+// @while $i>0 {
+//   .item-#{$i} {
+//     background-color: $color-4;
+//   }
+//   $i: $i - 1;
+// }

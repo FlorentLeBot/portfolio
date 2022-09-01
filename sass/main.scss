@@ -1,0 +1,43 @@
+@import "./utils/variables";
+@import "./utils/functions";
+@import "./utils/mixins";
+@import "./utils/placeholders";
+@import "./base/base";
+@import "./base/typography";
+@import "./layouts/header";
+@import "./layouts/nav";
+@import "./layouts/container";
+@import "./layouts/form";
+@import "./pages/home";
+@import "./pages/about";
+@import "./pages/project";
+
+// #header {
+//   background-color: blueviolet !important;
+//   height: 400px;
+// }
+// // #main {
+// //   background-color: greenyellow;
+// //   height: auto;
+// // }
+// #footer {
+//   background-color: aqua;
+// }
+
+// INSTALLATION DE SASS
+
+// -> Installez NodeJS
+// -> npm init (package.json)
+// -> npm install -g sass
+// -> dans package.json :
+// "scripts": {
+// "sass": "sass --watch ./sass/main.scss:./css/style.css"
+// },
+// -> npm run sass
+
+// Les media queries : min-width -> 320 / 768 / 1024 / 1280 / 1600
+
+// Méthodologie BEM (bloc, élément, modificateur)
+// BLOC          -> des bouts de code autonomes (nommé en fonction de son rôle "form")
+// ELEMENTS      -> les parties qui forment le bloc (nom du bloc + __ + puis son rôle "form__label")
+// MODIFICATEUR  -> change l'apparence ou le comportement d'un bloc ou d'un élément (nom du bloc ou de l'élément + -- + modification "button--green")

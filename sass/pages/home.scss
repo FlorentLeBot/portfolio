@@ -1,0 +1,35 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+// PAGE ACCUEIL
+
+.container {
+  @include container(1200px, 0 auto);
+  position: relative;
+  margin-top: 300px;
+
+}
+.section-home {
+  @include style-section(95%, 1200px, 300px, 2.5%, auto);
+  @include display(flex, center, center, wrap);
+  @media screen and (min-width: 768px) {
+    width: 100%; 
+    margin: 0%;
+  }
+  & .article-home {
+    @include style-article(100%, 2% 0, $color-2, $box-shadow);
+    @media screen and (min-width: 768px) {
+      width: 47%;
+      margin: 1%;
+    }
+    @media screen and (min-width: 1024px) {
+      width: 31%;
+    }
+    & .title {
+      @include title(2rem, white, center);
+    }
+    & .content {
+      @include content(1rem, white, 1rem, center);
+    }
+  }
+}
