@@ -7,9 +7,8 @@
   height: 90vh;
   width: 100%;
   background-color: $color-2;
-  
 }
-.header-wave{
+.header-wave {
   width: 100%;
   position: absolute;
   left: 0;
@@ -31,9 +30,7 @@
   .main-header {
     height: 32vh;
   }
-
 }
-
 
 // .progress {
 //   width: 50%;
@@ -83,7 +80,6 @@
 //   }
 // }
 .intro {
- 
   top: 15%;
   left: 5%;
   border-radius: 10px;
@@ -111,5 +107,35 @@
   }
 }
 
-
-
+.header-content {
+  @include display(flex, center, center, wrap);
+  @media screen and (min-width: 600px) {
+    min-width: 400px;
+    @include display(flex, space-around, center, nowrap);
+  }
+}
+.header-gif,
+.header-title {
+  position: relative;
+  z-index: 10000;
+  margin: 1rem;
+}
+.header-gif {
+  width: 330px;
+  border-radius: 20px;
+  margin-top: 50px;
+ 
+  @media screen and (min-width: 600px) {
+    width: 350px;
+    margin-top: 300px;
+  }
+}
+.header-title {
+  color: $color-1;
+  font-size: $font-size * 2;
+  margin: 300px 0 0 0;
+ 
+  @media screen and (min-width: 500px) {
+    font-size: $font-size * 3;
+  }
+}

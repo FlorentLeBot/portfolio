@@ -5,8 +5,12 @@
 
 .container {
   @include container(1200px, 0 auto);
-  
+}
 
+.main-title{
+  width: 100%;
+  font-size: $font-size*3;
+  margin: 0 0 3rem 0;
 }
 .section-home {
   @include style-section(95%, 1200px, 300px, 25vh 2.5% 3rem, auto);
