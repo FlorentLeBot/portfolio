@@ -1,7 +1,31 @@
 @import "../utils/variables";
 @import "../utils/mixins";
 
-.main-footer{
-  height: 100px;
+footer {
+  width: 100%;
+  height: 9rem;
+  position: relative;
+  background: $color-2;
+  & .main-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  & a{
+    color: $color-1;
+  font-size: 1rem;
+  }
+}
+footer i {
+  font-size: 2rem;
+}
+footer #copyright {
+  position: absolute;
+  width: 100%;
+  height: 1.5rem;
   background-color: $color-2;
+  color: $color-1;
+  bottom: 0;
+  text-align: center;
 }

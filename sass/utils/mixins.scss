@@ -21,11 +21,10 @@
   margin: $margin;
 }
 
-@mixin style-article($width, $margin, $bg, $bs){
+@mixin style-article($width, $margin, $bg){
   width: $width;
   margin: $margin;
   background-color: $bg;
-  box-shadow: $bs;
 }
 
 @mixin display($display, $justify-content, $align-items, $flex-wrap) {
